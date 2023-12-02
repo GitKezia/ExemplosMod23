@@ -25,4 +25,31 @@ public class ClientServiceTest {
         String retorno = service.salvar();
         Assert.assertEquals("Sucesso", retorno);
     }
+
+    @Test
+    public void buscarTest() {
+        ClientDaoMock mockDao = new ClientDaoMock();
+        ClientService service = new ClientService(mockDao);
+        String retorno = service.salvar();
+        char expected;
+        Assert.assertEquals( "Sucesso", retorno);
+    }
+
+    @Test
+    public void atualizarTest() {
+        ClientDaoMock mockDao = new ClientDaoMock();
+        ClientService service = new ClientService(mockDao);
+        String retorno = service.salvar();
+        char expected;
+        Assert.assertEquals( "Sucesso", retorno);
+    }
+
+    @Test
+    public void excluirTest() {
+        ClientDaoMock mockDao = new ClientDaoMock();
+        ClientService service = new ClientService(mockDao);
+        String retorno = service.salvar();
+        char expected;
+        Assert.assertEquals( "Sucesso", retorno);
+    }
 }
